@@ -1,22 +1,22 @@
-How to run ?
+# How to run ?
 
-Start Service
+## Start Service
 
 ``` docker-compose up -d``` 
 
-wait around 2 - 3 min for Nifi Bootup
+Wait around 2 - 3 min for Nifi Bootup
 
-Nifi
+## Nifi
 
 http://localhost:8443/
 
 
-API 
+## API 
 
 [POST] - Get Int Mock Response
 
 http://localhost:3000/v1/api/intuition
 
-Start Intuition Api Mockup
+## Start Intuition Api Mockup
 
 ``` go run . ```
