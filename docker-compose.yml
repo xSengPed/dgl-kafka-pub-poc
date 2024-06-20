@@ -4,6 +4,9 @@ services:
 
   app:
       build: .
+      container_name: backend
+      ports:
+        - "3000:3000"
       depends_on:
         - kafka
       environment:
@@ -46,3 +49,4 @@ services:
       - NIFI_SENSITIVE_PROPS_KEY=TEST_FOR_KAFKA_KEY
     depends_on:
       - zookeeper
+      - app

@@ -35,8 +35,8 @@ func startConsumer(servers []string) {
 
 }
 func main() {
+	servers := []string{"kafka:9092", "localhost:9092"}
 	// servers := []string{"192.168.1.143:9092", "kafka:9092", "localhost:9092"}
-	servers := []string{"192.168.1.143:9092", "kafka:9092", "localhost:9092"}
 	saramaClient, err := sarama.NewClient(servers, nil)
 	if err != nil {
 		slog.Error(err.Error())
