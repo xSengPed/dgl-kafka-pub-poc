@@ -2091,7 +2091,7 @@ Publish Response To Kafka</label>
             <variables>
                 <entry>
                     <key>intuitionEndpoint</key>
-                    <value>http://app:3000/v1/api/intuition</value>
+                    <value>http://host.docker.internal:3000/v1/api/intuition</value>
                 </entry>
                 <entry>
                     <key>kafkaHost</key>
