@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+
+  app:
+      build: .
+      depends_on:
+        - kafka
+      environment:
+        KAFKA_BROKER: kafka:9092
+
+  zookeeper:
+    image: zookeeper
+    container_name: zookeeper
+    volumes:
+      - ./zookeeper:/data
+  
+  kafka:
+    image: bitnami/kafka
+    container_name: kafka
+    ports:
+      - 9092:9092
+    volumes:
+      - ./kafka:/bitnami/kafka/data
+    environment:
+      KAFKA_LISTENERS: "INTERNAL://:9092,EXTERNAL://:29092"
+      KAFKA_ADVERTISED_LISTENERS: "INTERNAL://kafka:9092,EXTERNAL://localhost:29092"
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: "INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT"
+      KAFKA_INTER_BROKER_LISTENER_NAME: "INTERNAL"
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+    depends_on:
+      - zookeeper
+
+  nifi:
+    image: apache/nifi:latest
+    ports:
+      - "8443:8080"
+    volumes:
+      - ./nifi-data:/opt/nifi/nifi-current/data
+    environment:
+      - NIFI_WEB_HTTP_PORT=8080
+      - NIFI_CLUSTER_IS_NODE=true
+      - NIFI_CLUSTER_NODE_PROTOCOL_PORT=8082
+      - NIFI_ZK_CONNECT_STRING=zookeeper:2181
+      - NIFI_ELECTION_MAX_WAIT=1 min
+      - NIFI_SENSITIVE_PROPS_KEY=TEST_FOR_KAFKA_KEY
+    depends_on:
+      - zookeeper
