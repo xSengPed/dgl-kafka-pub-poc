@@ -15,6 +15,7 @@ func NewMockupIntutionHandler() *MockupIntutionHandler {
 }
 
 func (h *MockupIntutionHandler) PostToInstution(ctx *fiber.Ctx) error {
+
 	data, err := os.ReadFile("mockup/resp_intuition.json")
 	if err != nil {
 		return ctx.Status(500).JSON(fiber.Map{"error": err.Error()})
