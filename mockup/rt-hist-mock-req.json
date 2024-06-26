@@ -1,0 +1,177 @@
+{
+  "Application_Number": "108444-00166665/2567",
+  "Application_Date": "2024-05-02T00:00:00.000Z",
+  "Sequence_Number": 1,
+  "Channel": "channel",
+  "Application_Type": "1",
+  "Application_Status": "New",
+  "Sale_Code": "550101",
+  "Request_Creator": "500062",
+  "Decision_Reason": "",
+  "Decision_Employee": "",
+  "Decision_Date": "2024-05-02T00:00:00.000Z",
+  "Branch": "108444",
+  "Req_Num_Other_Sys": "",
+  "Staff_Name": "",
+  "Staff_ID": "",
+  "Staff_Position": "",
+  "Staff_Role": "",
+  "System_Source": "CMLOS",
+  "Product_Group": "",
+  "Borrower_Type": "",
+  "Total_Loan_Amount": 0,
+  "Branch_Sub_District": "",
+  "Branch_District": "",
+  "Branch_Province": "",
+  "Branch_Region": "NE",
+  "Branch_Latitude": 1.00,
+  "Branch_Longitude": 1.00,
+  "Addresses": [
+    {
+      "Address_2": "286/30",
+      "Address_3": "5",
+      "Address_Type": "R",
+      "Applicant_Type": "B",
+      "Citizen_Id_Number": "1530400044637",
+      "District": "1",
+      "Province": "53",
+      "Sub_District": "0200",
+      "Telephone": "0818889091",
+      "Thai_Name": "กชพร",
+      "Thai_Surname": "บุญเลิศ",
+      "Years_Of_Residence": 7,
+      "Zip_Code": "53000"
+    },
+    {
+      "Address_2": "286/30",
+      "Address_3": "5",
+      "Address_Type": "C",
+      "Applicant_Type": "B",
+      "Citizen_Id_Number": "1530400044637",
+      "District": "1",
+      "Province": "53",
+      "Sub_District": "0200",
+      "Telephone": "0818889091",
+      "Thai_Name": "กชพร",
+      "Thai_Surname": "บุญเลิศ",
+      "Years_Of_Residence": 7,
+      "Zip_Code": "53000"
+    },
+    {
+      "Address_1": "โรงพยาบาลอ ุตรดิตถ์",
+      "Address_2": "38",
+      "Address_Type": "O",
+      "Applicant_Type": "B",
+      "Citizen_Id_Number": "1530400044637",
+      "District": "1",
+      "Province": "53",
+      "Sub_District": "0100",
+      "Telephone": "055409999",
+      "Thai_Name": "กชพร",
+      "Thai_Surname": "บุญเลิศ",
+      "Zip_Code": "53000"
+    },
+    {
+      "Address_Type": "C",
+      "Applicant_Type": "S",
+      "Citizen_Id_Number": "1539900232121",
+      "Thai_Name": "กฤติน",
+      "Thai_Surname": "บุญเลิศ"
+    },
+    {
+      "Address_Type": "O",
+      "Applicant_Type": "S",
+      "Citizen_Id_Number": "1539900232121",
+      "Thai_Name": "กฤติน",
+      "Thai_Surname": "บุญเลิศ"
+    }
+  ],
+  "Applicants": [
+    {
+      "Age": "35",
+      "Applicant_Type": "B",
+      "CIF_Number": "14586576",
+      "Citizen_Id_Exp": "20260122",
+      "Citizen_Id_Number": "1530400044637",
+      "Date_Of_Birth": "19890123",
+      "Education_Level": "3",
+      "Email": "kodchabornfaii@gmail.com",
+      "Eng_Name": "Kodchaborn",
+      "Eng_Surname": "Bunlert",
+      "KTB_Grade": "A",
+      "KYC_CDD_Status": "1",
+      "Living_Place_Period_Months": "84",
+      "Marital_Status": "M",
+      "Mobile_Phone": "0818889091",
+      "Nationality": "TH",
+      "Resident_Type": "1",
+      "Sex": "F",
+      "Thai_Name": "กชพร",
+      "Thai_Surname": "บุญเลิศ",
+      "Tuef_Id": "X200510550101202404291225"
+    },
+    {
+      "Applicant_Type": "S",
+      "CIF_Number": "14586576",
+      "Citizen_Id_Number": "1539900232121",
+      "Thai_Name": "กฤติน",
+      "Thai_Surname": "บุญเลิศ",
+      "Tuef_Id": null
+    }
+  ],
+  "Businesses": [
+    {
+      "Applicant_Type": "B",
+      "Business_Purpose_Code_1": "Q86",
+      "Citizen_Id_Number": "1530400044637",
+      "KTB_Customer_Code": "221",
+      "Owner_Branch": "297",
+      "Thai_Name": "กชพร",
+      "Thai_Surname": "บุญเลิศ"
+    }
+  ],
+  "Employments": [
+    {
+      "Applicant_Type": "B",
+      "Avg_Monthly_Income": 12786.36,
+      "Citizen_Id_Number": "1530400044637",
+      "Company_Name": "สำนักงานปลัดกระทรวงสาธารณสุข",
+      "Monthly_Income": 28020,
+      "Occupation": "1",
+      "Occupation_Type": "1110",
+      "Position": "4",
+      "Proof_of_Income": "3",
+      "Start_Date": "20120501",
+      "Thai_Name": "กชพร",
+      "Thai_Surname": "บุญเลิศ",
+      "Total_Monthly_Income": 31520,
+      "Working_Period": 12
+    },
+    {
+      "Applicant_Type": "S",
+      "Citizen_Id_Number": "1539900232121",
+      "Monthly_Income": 0,
+      "Thai_Name": "กฤติน",
+      "Thai_Surname": "บุญเลิศ",
+      "Total_Monthly_Income": 0
+    }
+  ],
+  "Loans": [
+    {
+      "Installment_Amount": 900,
+      "Installment_Period": 360,
+      "Loan_Amount": 116000,
+      "Loan_Purpose": "16",
+      "Loan_Type_Code": "3",
+      "Marketing_Code": "1180"
+    },
+    {
+      "Installment_Amount": 12200,
+      "Installment_Period": 420,
+      "Loan_Amount": 2056000,
+      "Loan_Purpose": "5",
+      "Loan_Type_Code": "1",
+      "Marketing_Code": "1178"
+    }
+  ]
+}

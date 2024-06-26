@@ -41,5 +41,6 @@ func NewRouter(saramaClient sarama.Client, servers []string) *fiber.App {
 	api.Get("/topics", topicHandler.GetTopics)
 	api.Post("/intuition", intuitionHandler.PostToInstution)
 	api.Post("/intuition-v2", intuitionHandler.PostToInstutionV2)
+	api.Get("/gen-bcl", intuitionHandler.GenerateBCLMock)
 	return app
 }
